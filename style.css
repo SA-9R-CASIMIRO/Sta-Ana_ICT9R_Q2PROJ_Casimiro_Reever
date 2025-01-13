@@ -179,3 +179,115 @@ form input.form-control {
 form button {
     padding: 8px 12px;
 }
+body {
+    background-image: url('Metropolis.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 2px solid #007bff;
+}
+
+.navbar-brand, .nav-link {
+    color: #007bff !important;
+}
+
+.nav-link:hover {
+    color: #dc3545 !important;
+}
+
+.container {
+    margin-top: 100px;
+    padding: 0 15px;
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    position: relative;
+}
+
+h3 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+label {
+    font-weight: bold;
+    color: #fff;
+}
+
+input[type="text"], input[type="number"], input[type="tel"], textarea {
+    background-color: #f8f9fa;
+    border: 2px solid #007bff;
+    color: #333;
+    font-size: 1rem;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, input[type="tel"]:focus, textarea:focus {
+    outline: none;
+    border-color: #dc3545;
+    box-shadow: 0 0 5px rgba(220, 53, 69, 0.5);
+}
+
+.form-check-input {
+    margin-left: 10px;
+}
+
+.form-check-label {
+    color: #fff;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #dc3545;
+}
+
+button[type="submit"]:active {
+    background-color: #ffc107;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin-top: 50px;
+    }
+
+    .content {
+        padding: 20px;
+        max-width: 90%;
+    }
+}
