@@ -24,25 +24,32 @@ body {
 }
 
 .container {
-    margin-top: 100px;
+    margin-top: 20px;
     padding: 0 15px;
 }
 
-.content {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 30px;
-    border-radius: 10px;
-    max-width: 600px;
-    margin: 0 auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-    z-index: 10;
-    position: relative;
+header {
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
 }
 
-h3 {
+header .logo img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.recipe-form {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+h2 {
     color: #fff;
     font-size: 2rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 label {
@@ -50,7 +57,7 @@ label {
     color: #fff;
 }
 
-input[type="text"], input[type="number"], input[type="tel"], textarea {
+input[type="text"], textarea {
     background-color: #f8f9fa;
     border: 2px solid #007bff;
     color: #333;
@@ -60,18 +67,10 @@ input[type="text"], input[type="number"], input[type="tel"], textarea {
     border-radius: 5px;
 }
 
-input[type="text"]:focus, input[type="number"]:focus, input[type="tel"]:focus, textarea:focus {
+input[type="text"]:focus, textarea:focus {
     outline: none;
     border-color: #dc3545;
     box-shadow: 0 0 5px rgba(220, 53, 69, 0.5);
-}
-
-.form-check-input {
-    margin-left: 10px;
-}
-
-.form-check-label {
-    color: #fff;
 }
 
 button[type="submit"] {
@@ -101,13 +100,83 @@ footer {
     text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-    .container {
-        margin-top: 50px;
-    }
+footer p {
+    margin: 0;
+}
 
-    .content {
-        padding: 20px;
-        max-width: 90%;
-    }
+.cake-item img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    margin: 0 auto;
+    display: block;
+}
+
+.about-section {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    margin-top: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.about-section h2 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.about-section p {
+    color: #ddd;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.about-section img {
+    width: 70%;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.form-container input, .form-container textarea {
+    margin-bottom: 15px;
+}
+
+.hero {
+    position: relative;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+form.d-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+form input.form-control {
+    width: 200px;
+}
+
+form button {
+    padding: 8px 12px;
 }
